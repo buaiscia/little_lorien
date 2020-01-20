@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Suspense } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import Landing from '../../Components/Landing';
 
-class Layout extends Component {
+import About from '../../Components/About/About';
+import Contact from '../../Components/Contact/Contact';
 
-   
+class Layout extends Component {
 
     render() {
 
-        const landing = null;
-        
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <h1>Layout page</h1>
-                    
-                    <Landing />
+                    {/* {this.props.children} */}
+                    <Switch>
+                        <Route path='/' exact component={Landing} />
+                        <Route path='/about' component={About} />
+                        <Route path='/contact' component={Contact} />
+                    </Switch>
                 </React.Fragment>
             </BrowserRouter>
 
