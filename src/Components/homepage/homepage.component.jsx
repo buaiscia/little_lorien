@@ -8,7 +8,24 @@ class Homepage extends Component {
     render() {
         return (
             <div>
-                <h1>Homepage</h1>
+                <h1>Little Lorien</h1>
+                <ul>
+                    <li>
+                        Misc
+                    </li>
+                    <li>
+                        Candles
+                    </li>
+                    <li>
+                        Ceramics
+                    </li>
+                    <li>
+                        Gingerbread
+                    </li>
+                    <li>
+                        Wood carving
+                    </li>
+                </ul>
             </div>
         )
     }

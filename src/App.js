@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 
 import Header from './Components/header/header.component';
 import Landing from './pages/landing/landing.component';
@@ -12,14 +12,20 @@ import './App.css';
 
 class App extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+
   }
 
   render() {
+    const urlPath = this.props.location.pathname
+    
     return (
       <div>
-        <Header />
+        {
+          urlPath !== "/" ? <Header /> : null
+        }
+        
         <Switch>
           <Route
             exact
@@ -46,4 +52,4 @@ class App extends Component {
 
 }
 
-export default App;
+export default withRouter(App);
