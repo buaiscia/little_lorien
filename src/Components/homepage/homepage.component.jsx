@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Homepage extends Component {
     constructor()  {
@@ -11,19 +12,41 @@ class Homepage extends Component {
                 <h1>Little Lorien</h1>
                 <ul>
                     <li>
-                        Misc
+                        <Link to="/about">
+                            Misc
+                        </Link>
                     </li>
                     <li>
-                        Candles
+                        <Link to="/contact">
+                            Contact
+                        </Link>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <Link to="/art/misc">
+                            Misc
+                        </Link>
                     </li>
                     <li>
-                        Ceramics
+                        <Link to="/art/candles">
+                            Candles
+                        </Link>
                     </li>
                     <li>
-                        Gingerbread
+                        <Link to="/art/ceramics">
+                            Ceramics
+                        </Link>
                     </li>
                     <li>
-                        Wood carving
+                        <Link to="/art/gingerbread">
+                            Gingerbread
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/art/woodcarving">
+                            Woodcarving
+                        </Link>
                     </li>
                 </ul>
             </div>

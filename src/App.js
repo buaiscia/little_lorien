@@ -6,6 +6,7 @@ import Landing from './pages/landing/landing.component';
 import Art from './pages/art/art.component';
 import About from './pages/about/about.component';
 import Contact from './pages/contact/contact.component';
+import NotFound from './pages/notfound/notfound.component';
 
 
 import './App.css';
@@ -19,31 +20,29 @@ class App extends Component {
 
   render() {
     const urlPath = this.props.location.pathname
-    
+
     return (
       <div>
         {
           urlPath !== "/" ? <Header /> : null
         }
-        
+
         <Switch>
-          <Route
-            exact
-            path="/"
-            component={Landing}
-          />
-          <Route
-            path="/art"
-            component={Art}
-          />
-          <Route
-            path="/about"
-            component={About}
-          />
-          <Route
-            path="/contact"
-            component={Contact}
-          />
+          <Route exact path="/">
+            <Landing />
+          </Route>
+          <Route path="/art">
+            <Art />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route>
+            <NotFound />
+          </Route>
         </Switch>
       </div>
     );
