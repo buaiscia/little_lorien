@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 
+import MenuItem from '../../Components/menu-item/menu-item.component';
+
+import './art.styles.scss';
+
 class ArtPage extends Component {
     constructor() {
-        super()
-        
+        super();
+
         this.state = {
             sections: [
                 {
@@ -20,20 +24,22 @@ class ArtPage extends Component {
                 },
                 {
                     title: 'ceramics',
-                    imageUrl: 'https://cdn.vox-cdn.com/thumbor/bw0JyNwx5PY727jC-_YvvCBPsi4=/0x0:6000x4000/1200x675/filters:focal(2281x2511:3241x3471)/cdn.vox-cdn.com/uploads/chorus_image/image/64752082/bluestone11.0.jpg',
+                    imageUrl: 'https://c8.alamy.com/comp/EMYECX/women-participating-in-a-pottery-class-art-class-making-ceramics-london-EMYECX.jpg',
                     id: 3,
                     linkUrl: 'art/ceramics'
                 },
                 {
                     title: 'candles',
-                    imageUrl: '',
+                    imageUrl: 'https://render.fineartamerica.com/images/rendered/default/print/6.5/8/break/images/artworkimages/medium/1/candles-oil-painting-natalja-picugina.jpg',
                     id: 4,
+                    size: 'large',
                     linkUrl: 'art/candles'
                 },
                 {
                     title: 'misc',
-                    imageUrl: '',
+                    imageUrl: 'https://image.shutterstock.com/image-photo/artist-applying-henna-tattoo-on-260nw-382249735.jpg',
                     id: 5,
+                    size: 'large',
                     linkUrl: 'art/misc'
                 }
             ]
@@ -42,8 +48,11 @@ class ArtPage extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Art page</h1>
+            <div className="art-menu">
+                {this.state.sections.map(({ id, ...otherSectionProps }) => (
+                    <MenuItem key={id} {...otherSectionProps} />
+                    )
+                )}
             </div>
         )
     }
