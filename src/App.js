@@ -8,6 +8,12 @@ import About from './pages/about/about.component';
 import Contact from './pages/contact/contact.component';
 import NotFound from './pages/notfound/notfound.component';
 
+import WoodCarving from './Components/woodcarving/woodcarving.component';
+import CandlePainting from './Components/candles/candles.component';
+import Ceramics from './Components/ceramics/ceramics.component';
+import Gingerbread from './Components/gingerbread/gingerbread.component';
+import Miscellaneous from './Components/misc/misc.component';
+
 
 import './App.css';
 
@@ -31,6 +37,21 @@ class App extends Component {
           <Route exact path="/">
             <Landing />
           </Route>
+          <Route exact path="/art/woodcarving">
+            <WoodCarving />
+          </Route>
+          <Route exact path="/art/ceramics">
+            <Ceramics />
+          </Route>
+          <Route exact path="/art/candle-painting">
+            <CandlePainting />
+          </Route>
+          <Route exact path="/art/gingerbread">
+            <Gingerbread />
+          </Route>
+          <Route exact path="/art/miscellaneous">
+            <Miscellaneous />
+          </Route>
           <Route path="/art">
             <Art />
           </Route>
@@ -40,6 +61,7 @@ class App extends Component {
           <Route path="/contact">
             <Contact />
           </Route>
+          
           <Route>
             <NotFound />
           </Route>

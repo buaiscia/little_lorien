@@ -14,33 +14,33 @@ class ArtPage extends Component {
                     title: 'woodcarving',
                     imageUrl: 'https://i.pinimg.com/originals/90/ef/f2/90eff29ec1a08f1e643889917706eb45.jpg',
                     id: 1,
-                    linkUrl: 'art/woodcarving'
+                    linkUrl: '/woodcarving'
                 },
                 {
                     title: 'gingerbread',
                     imageUrl: 'https://www.oetker.co.uk/Recipe/Recipes/oetker.co.uk/uk-en/baking/image-thumb__72012__RecipeDetail/gingerbread-men-and-reindeers.jpg',
                     id: 2,
-                    linkUrl: 'art/gingerbread'
+                    linkUrl: '/gingerbread'
                 },
                 {
                     title: 'ceramics',
                     imageUrl: 'https://c8.alamy.com/comp/EMYECX/women-participating-in-a-pottery-class-art-class-making-ceramics-london-EMYECX.jpg',
                     id: 3,
-                    linkUrl: 'art/ceramics'
+                    linkUrl: '/ceramics'
                 },
                 {
                     title: 'candles',
                     imageUrl: 'https://render.fineartamerica.com/images/rendered/default/print/6.5/8/break/images/artworkimages/medium/1/candles-oil-painting-natalja-picugina.jpg',
                     id: 4,
                     size: 'large',
-                    linkUrl: 'art/candles'
+                    linkUrl: '/candle-painting'
                 },
                 {
                     title: 'misc',
                     imageUrl: 'https://image.shutterstock.com/image-photo/artist-applying-henna-tattoo-on-260nw-382249735.jpg',
                     id: 5,
                     size: 'large',
-                    linkUrl: 'art/misc'
+                    linkUrl: '/miscellaneous'
                 }
             ]
         }

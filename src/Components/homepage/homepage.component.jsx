@@ -24,12 +24,12 @@ class Homepage extends Component {
                 </ul>
                 <ul>
                     <li>
-                        <Link to="/art/misc">
+                        <Link to="/art/miscellaneous">
                             Misc
                         </Link>
                     </li>
                     <li>
-                        <Link to="/art/candles">
+                        <Link to="/art/candle-painting">
                             Candles
                         </Link>
                     </li>
