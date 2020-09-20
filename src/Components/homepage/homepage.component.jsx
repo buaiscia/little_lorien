@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import WoodCarving from '../woodcarving/woodcarving.component';
 
 class Homepage extends Component {
-    constructor()  {
+    constructor() {
         super()
     }
 
@@ -13,7 +14,7 @@ class Homepage extends Component {
                 <ul>
                     <li>
                         <Link to="/about">
-                            Misc
+                            About
                         </Link>
                     </li>
                     <li>
@@ -45,7 +46,7 @@ class Homepage extends Component {
                     </li>
                     <li>
                         <Link to="/art/woodcarving">
-                            Woodcarving
+                            <WoodCarving />
                         </Link>
                     </li>
                 </ul>

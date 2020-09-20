@@ -1,0 +1,18 @@
+.wood-header {
+    text-align: center;
+}
+
+.grid {
+    text-align: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item-grid img {
+    max-height: 350px;
+}
+
+.title-grid {
+    text-align: center;
+}
