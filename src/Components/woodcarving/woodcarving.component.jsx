@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
 
 import './woodcarving.style.scss';
 
